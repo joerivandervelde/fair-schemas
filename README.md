@@ -47,7 +47,7 @@ This repository contains best-practice _tables_ that are reused for specific pro
 | [authors](#authors)           | A list of contributing profile authors.                                                                      |
 | [copyright](#copyright)       | A copyright statement about the profile.                                                                     |
 | [license](#license)           | The license under which the profile is released.                                                             |
-| [reuseColumns](#reuseColumns) | Existing columns reused by this profile.                                                                     |
+| [reuseColumns](#reusecolumns) | Existing columns reused by this profile.                                                                     |
 | [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.                                                                |
 
 ### Column attributes <a id='columns'></a>
@@ -60,7 +60,7 @@ This repository contains best-practice _tables_ that are reused for specific pro
 | unit           | Ontology term to denote the unit of measurement.             |
 | partOfStandard | Mark this column is part of an accepted standard.            |
 
-## Reuse column attributes <a id='reuseColumns'></a>
+## Reuse columns <a id='reusecolumns'></a>
 | Attribute | Description                                          |
 |-----------|------------------------------------------------------|
 | type      | "Profile", "Table", or "Column"                      |
