@@ -12,19 +12,24 @@ This repository contains best-practice _tables_ that are reused for specific pro
 * Table and column names must start with letter, followed by letter, number, whitespace or underscore ([a-zA-Z][a-zA-Z0-9_ ]*).
 
 ## Rules for profiles
-* Profiles represent specific projects, applications or standards.
-* Profile names that match the column attribute _partOfStandard_ describe that standard.
-* Profiles for standards are not expected to introduce additional columns.
+* Profiles represent specific projects or applications.
 * Profiles can cherry-pick a combination of:
   * Tables (all columns of that table)
   * Columns (some columns of that table)
   * Profiles (all columns included or defined by that profile)
+  * Standards (all columns included or defined by that standard)
 * Reused columns are chosen by referencing only their name.
 * Reused columns are placed in their original table structure.
 * Reused columns cannot be altered for interoperability purposes. This includes relabeling. If relabeling is required, this should be done via runtime internationalization.
 * Profiles for particular applications can introduce highly specific, non-reusable tables and columns.
-* To add new columns to an existing table structure, that structure should be replicated in the profile using only table names.
+* To add new columns to an existing table, that table should be represented in the profile using only the name.
 * New columns in new tables should be fully specified as expected from tables.
+
+## Rules for standards
+* Standards are only comprised of columns annotated with the _partOfStandard_ attribute.
+* Standard names that match the column attribute _partOfStandard_ describe that standard.
+* Standard cannot point to additional columns, tables or profiles.
+* Standards cannot introduce additional columns.
 
 ## Syntax
 ### Table attributes <a id='tables'></a>
@@ -36,16 +41,27 @@ This repository contains best-practice _tables_ that are reused for specific pro
 | [columns](#columns) | The columns contained in this table, comparable to class attributes or features. |
 
 ### Profile attributes <a id='profiles'></a>
-| Attribute                     | Description                                                                                                  |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------|
-| name                          | Name of this profile. Required.                                                                              |
-| definition                    | Definition of this profile, usually adapted from an ontology.                                                |
-| tags                          | Ontology terms that best describe this profile.                                                              |
-| [authors](#authors)           | A list of contributing profile authors.                                                                      |
-| [copyright](#copyright)       | A copyright statement about the profile.                                                                     |
-| [license](#license)           | The license under which the profile is released.                                                             |
-| [reuseColumns](#reusecolumns) | Existing columns reused by this profile.                                                                     |
-| [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.                                                                |
+| Attribute                     | Description                                                   |
+|-------------------------------|---------------------------------------------------------------|
+| name                          | Name of this profile. Required.                               |
+| definition                    | Definition of this profile, usually adapted from an ontology. |
+| tags                          | Ontology terms that best describe this profile.               |
+| [authors](#authors)           | A list of contributing profile authors.                       |
+| [copyright](#copyright)       | A copyright statement about the profile.                      |
+| [license](#license)           | The license under which the profile is released.              |
+| [reuseColumns](#reusecolumns) | Existing columns reused by this profile.                      |
+| [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.                 |
+
+### Standard attributes <a id='standards'></a>
+| Attribute               | Description                                                   |
+|-------------------------|---------------------------------------------------------------|
+| name                    | Name of this profile. Required.                               |
+| definition              | Definition of this profile, usually adapted from an ontology. |
+| tags                    | Ontology terms that best describe this profile.               |
+| [authors](#authors)     | A list of contributing profile authors.                       |
+| [copyright](#copyright) | A copyright statement about the profile.                      |
+| [license](#license)     | The license under which the profile is released.              |
+| url                     | Link to a web address where more information can be found.    |
 
 ### Column attributes <a id='columns'></a>
 | Attribute      | Description                                                  |
