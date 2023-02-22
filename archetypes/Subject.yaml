@@ -1,10 +1,11 @@
 - name: Subject
   definedBy: NCIT:C41189 [http://purl.obolibrary.org/obo/NCIT_C41189]
   definedAs: Study Subject; An individual who is observed, analyzed, examined, investigated, experimented upon, or/and treated in the course of a particular study.
-
+  prefixes:
+    - NCIT: http://purl.obolibrary.org/obo/NCIT_
   columns:
     - name: Identifier
-      definedBy: NCIT:C25364 [http://purl.obolibrary.org/obo/NCIT_C25364]
+      definedBy: NCIT:C25364
       definedAs: Identifier; One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
       dataType: id
       partOfStandard: Beaconv2, FAIRGenomes

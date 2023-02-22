@@ -12,11 +12,15 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 * Columns that represent the same concept (e.g. Age) expressed in a different value type (e.g. age in years vs. age range categorical) are not explicitly connected, but should be tagged with the same semantics.
 * Column names are only required to be unique within context of their table.
 * Table and column names must start with letter, followed by letter, number, whitespace or underscore ([a-zA-Z][a-zA-Z0-9_ ]*).
+* Things not supported:
+  * Inheritance because it is too limiting. How to solve use cases for inheritance?
+    * Instead of querying for an inheritance subtree you can indicate what profile of a table you want to have in your reference
+    * When using refLabel for a reference the designer of an instance should ensure all columns exist in the refered to profiles.
 
 ## Rules for profiles
 * Profiles represent specific projects or applications.
 * Profiles can cherry-pick a combination of:
-  * Tables (all columns of that table)
+  * Tables (all columns of that table). We sometimes refer to such table instance as 'flavor'. E.g. Patient is a flavor of Subject.
   * Columns (some columns of that table)
   * Profiles (all columns included or defined by that profile)
   * Standards (all columns included or defined by that standard)
@@ -100,3 +104,7 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 |-----------|---------------------------------|
 | name      | Name of the active license.     |
 | url       | URL where license can be found. |
+
+## Design principles for the syntax
+* we prefer explicit definitions over magic. E.g. if you are ducktyping (e.g. using different flavors of a table) then the standard should make exlpicit if you assume particular columns to be present (e.g. via refLabel you can indidate what columns you expect in a lookup).
+* semantic data types.
