@@ -1,0 +1,79 @@
+---
+- name: "XX Genotype"
+  definition: "The normal genotype of a female human."
+  codesystem: "NCIT"
+  code: "C45976"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C45976"
+- name: "XY Genotype"
+  definition: "The normal genotype of a male human."
+  codesystem: "NCIT"
+  code: "C45977"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C45977"
+- name: "45,XO Karyotype"
+  definition: "An abnormal sex chromosome karyotype where the individual is missing\
+    \ either a second X chromosome or the Y chromosome. The normal autosomal karyotype\
+    \ is present. This karyotype is associated with Turner Syndrome."
+  codesystem: "NCIT"
+  code: "C176780"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176780"
+- name: "45,XO with Y Chromosomal Material"
+  definition: "An abnormal sex chromosome karyotype where the individual is missing\
+    \ a second X chromosome and has some chromosomal material from the Y chromosome.\
+    \ The normal autosomal karyotype is present."
+  codesystem: "NCIT"
+  code: "C176781"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176781"
+- name: "47,XXX Karyotype"
+  definition: "An abnormal sex chromosome karyotype where the individual has three\
+    \ copies of the X chromosome. The normal autosomal karyotype is present. This\
+    \ karyotype is associated with triple X syndrome."
+  codesystem: "NCIT"
+  code: "C176785"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176785"
+- name: "47,XXY Karyotype"
+  definition: "An abnormal sex chromosome karyotype where the individual has two copies\
+    \ of the X chromosome and one copy of the Y chromosome. The normal autosomal karyotype\
+    \ is present. This karyotype is associated with Klinefelter syndrome."
+  codesystem: "NCIT"
+  code: "C176784"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176784"
+- name: "47,XYY Karyotype"
+  definition: "An abnormal sex chromosome karyotype where the individual has one X\
+    \ chromosome and has two copies of the Y chromosome. The normal autosomal karyotype\
+    \ is present."
+  codesystem: "NCIT"
+  code: "C176782"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176782"
+- name: "48,XXXX Karyotype"
+  definition: "An abnormal sex chromosome karyotype where the individual has four\
+    \ copies of the X chromosome. The normal autosomal karyotype is present."
+  codesystem: "NCIT"
+  code: "C176787"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176787"
+- name: "48,XXXY Karyotype"
+  definition: "An abnormal sex chromosome karyotype where the individual has three\
+    \ copies of the X chromosome and one copy of the Y chromosome. The normal autosomal\
+    \ karyotype is present."
+  codesystem: "NCIT"
+  code: "C176786"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C176786"
+- name: "XXYY Syndrome"
+  definition: "A rare sex chromosome abnormality in which a male child has an extra\
+    \ X and Y chromosome."
+  codesystem: "NCIT"
+  code: "C89801"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C89801"
+- name: "Penta X Syndrome"
+  definition: "A rare sex chromosome abnormality in which a female child has 3 extra\
+    \ X chromosomes."
+  codesystem: "NCIT"
+  code: "C89802"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C89802"
+- name: "XXXXY Syndrome"
+  definition: "Rare syndrome caused by chromosomal defects and characterized by the\
+    \ presence of multiple X chromosomes and one Y chromosome. Signs and symptoms\
+    \ include short stature, mental retardation, hypogonadism, undescended testes,\
+    \ gynecomastia, and hypotonia."
+  codesystem: "NCIT"
+  code: "C85236"
+  ontologyTermURI: "http://purl.obolibrary.org/obo/NCIT_C85236"

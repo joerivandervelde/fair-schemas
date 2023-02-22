@@ -1,6 +1,8 @@
 # fair-schemas
 FAIR schemas to enable and encourage data interoperability across systems.
-This repository contains best-practice _tables_ that are reused for specific projects or applications via _profiles_. 
+This repository contains best-practice _tables_ that are reused for specific projects or applications via _profiles_.
+The aim is to be specific enough to be relatable and useful, but not be unnecessarily specific.
+For instance, _Subject_ is reusable cross-species by replacing human-biased underlying ontologies.
 
 ## Rules for tables
 * Tables represent concept archetype such as _Study_, _Biobank_, _Subject_, _Biosample_, and _Cohort_.
@@ -36,21 +38,32 @@ This repository contains best-practice _tables_ that are reused for specific pro
 | Attribute           | Description                                                                      |
 |---------------------|----------------------------------------------------------------------------------|
 | name                | Name of this table. Required.                                                    |
-| definition          | Definition of this table, usually adapted from an ontology.                      |
-| tags                | Ontology terms that best describe this table.                                    |
+| definedBy           | The location of the ontology term that defines this column.                      |
+| definedAs           | The column definition according to the ontology term.                            |
 | [columns](#columns) | The columns contained in this table, comparable to class attributes or features. |
 
+### Column attributes <a id='columns'></a>
+| Attribute      | Description                                                 |
+|:---------------|-------------------------------------------------------------|
+| name           | Name of this column. Required.                              |
+| definedBy      | The location of the ontology term that defines this column. |
+| definedAs      | The column definition according to the ontology term.       |
+| dataType       | Data type of this column. Required.                         |
+| unit           | Ontology term to denote the unit of measurement.            |
+| partOfStandard | Mark this column is part of an accepted standard.           |
+| example        | An example value to guide users.                            |
+
 ### Profile attributes <a id='profiles'></a>
-| Attribute                     | Description                                                   |
-|-------------------------------|---------------------------------------------------------------|
-| name                          | Name of this profile. Required.                               |
-| definition                    | Definition of this profile, usually adapted from an ontology. |
-| tags                          | Ontology terms that best describe this profile.               |
-| [authors](#authors)           | A list of contributing profile authors.                       |
-| [copyright](#copyright)       | A copyright statement about the profile.                      |
-| [license](#license)           | The license under which the profile is released.              |
-| [reuseColumns](#reusecolumns) | Existing columns reused by this profile.                      |
-| [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.                 |
+| Attribute                     | Description                                      |
+|-------------------------------|--------------------------------------------------|
+| name                          | Name of this profile. Required.                  |
+| definition                    | Definition of this profile.                      |
+| tags                          | Ontology terms that best describe this profile.  |
+| [authors](#authors)           | A list of contributing profile authors.          |
+| [copyright](#copyright)       | A copyright statement about the profile.         |
+| [license](#license)           | The license under which the profile is released. |
+| [reuseColumns](#reusecolumns) | Existing columns reused by this profile.         |
+| [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.    |
 
 ### Standard attributes <a id='standards'></a>
 | Attribute               | Description                                                   |
@@ -62,16 +75,6 @@ This repository contains best-practice _tables_ that are reused for specific pro
 | [copyright](#copyright) | A copyright statement about the profile.                      |
 | [license](#license)     | The license under which the profile is released.              |
 | url                     | Link to a web address where more information can be found.    |
-
-### Column attributes <a id='columns'></a>
-| Attribute      | Description                                                  |
-|:---------------|--------------------------------------------------------------|
-| name           | Name of this column. Required.                               |
-| definition     | Definition of this column, usually adapted from an ontology. |
-| tags           | Ontology terms that best describe this column.               |
-| dataType       | Data type of this column. Required.                          |
-| unit           | Ontology term to denote the unit of measurement.             |
-| partOfStandard | Mark this column is part of an accepted standard.            |
 
 ## Reuse columns <a id='reusecolumns'></a>
 | Attribute | Description                                          |
