@@ -61,13 +61,12 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 | Attribute                     | Description                                      |
 |-------------------------------|--------------------------------------------------|
 | name                          | Name of this profile. Required.                  |
-| definition                    | Definition of this profile.                      |
-| tags                          | Ontology terms that best describe this profile.  |
+| description                   | Definition of this profile.                      |
 | [authors](#authors)           | A list of contributing profile authors.          |
 | [copyright](#copyright)       | A copyright statement about the profile.         |
 | [license](#license)           | The license under which the profile is released. |
 | [reuseColumns](#reusecolumns) | Existing columns reused by this profile.         |
-| [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.    |
+| [customColumns](#tables)      | Tables or columns introduced by this profile.    |
 
 ### Standard attributes <a id='standards'></a>
 | Attribute               | Description                                                   |
@@ -82,8 +81,8 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 ## Reuse columns <a id='reusecolumns'></a>
 | Attribute | Description                                          |
 |-----------|------------------------------------------------------|
-| type      | "Profile", "Table", or "Column"                      |
 | name      | Profile or table name, table.columnName for columns. |
+| type      | "profile", "standard", "table", or "column"          |
 
 ## Author attributes <a id='authors'></a>
 | Attribute | Description                                 |

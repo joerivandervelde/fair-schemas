@@ -1,0 +1,8 @@
+---
+name: Patient
+extends: Subject
+definedBy: todo
+definedAs: todo
+columns:
+  - name: Clinical details
+    etc

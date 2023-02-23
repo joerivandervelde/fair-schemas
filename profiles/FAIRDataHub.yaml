@@ -1,0 +1,29 @@
+---
+name: FAIR Data Hub
+description: todo
+reuseColumns:
+  - name: Beacon v2
+    type: standard
+    relabel:   # does NOT change the actual name, only adds relabeling mappings (i.e. i18n)
+      - from: GenomicVariations
+        to: Variants
+      - from: GenomicVariations.variantInternalId
+        to: variantIdentifier
+      - from: Biosamples.id
+        to: sampleId
+  - name: FAIR Genomes
+    type: standard
+  - name: COSAS
+    type: profile
+  - name: ExtraWholeTable
+    type: table
+  - name: Sometable.AddOneColumn
+    type: column
+customColumns:
+  name: Patient
+  columns:
+    - name: NewPatientColumn
+      definedBy: todo
+      definedAs: todo
+      dataType: todo
+      example: todo
