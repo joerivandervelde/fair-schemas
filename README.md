@@ -73,8 +73,7 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 | Attribute               | Description                                                   |
 |-------------------------|---------------------------------------------------------------|
 | name                    | Name of this profile. Required.                               |
-| definition              | Definition of this profile, usually adapted from an ontology. |
-| tags                    | Ontology terms that best describe this profile.               |
+| description             | Definition of this profile, usually adapted from an ontology. |
 | [authors](#authors)     | A list of contributing profile authors.                       |
 | [copyright](#copyright) | A copyright statement about the profile.                      |
 | [license](#license)     | The license under which the profile is released.              |

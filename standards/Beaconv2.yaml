@@ -1,0 +1,26 @@
+---
+name: Beacon v2
+description: Beacon v2 is a protocol/specification established by the Global Alliance for Genomics and Health initiative (GA4GH) that defines an open standard for federated discovery of genomic (and phenoclinic) data in biomedical research and clinical applications.
+authors:
+  - name: Jordi Rambla
+  - name: Michael Baudis
+  - name: Roberto Ariosa
+  - name: Tim Beck
+  - name: Lauren A. Fromont
+  - name: Arcadi Navarro
+  - name: Rahel Paloots
+  - name: Manuel Rueda
+  - name: Gary Saunders
+  - name: Babita Singh
+  - name: John D. Spalding
+  - name: Juha Törnroos
+  - name: Claudia Vasallo
+  - name: Colin D. Veal
+  - name: Anthony J. Brookes
+copyright:
+  holder: Beacon v2 Documentation Contributors
+  years: 2021-2022
+license:
+  name: Creative Commons Zero v1.0 Universal
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+url: https://beacon-project.io
