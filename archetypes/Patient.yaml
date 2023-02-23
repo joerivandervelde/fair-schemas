@@ -1,8 +1,9 @@
 ---
 name: Patient
-extends: Subject
-definedBy: todo
-definedAs: todo
+extends: Person
+definedBy: NCIT:C16960
+definedAs: Patient; A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary.
 columns:
+
   - name: Clinical details
     etc

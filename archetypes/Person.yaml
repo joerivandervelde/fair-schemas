@@ -1,0 +1,20 @@
+---
+name: Person
+extends: Subject
+definedBy: NCIT:C25190
+definedAs: Person; A human being.
+columns:
+
+  - name: Gender at birth
+    definedBy: GSSO:009418 [http://purl.obolibrary.org/obo/GSSO_009418]
+    definedAs: assigned gender at birth; Assigned gender is one's gender which was assigned at birth, typically by a medical and/or legal organization, and then later registered with other organizations. Such a designation is typically based off of the superficial appearance of external genitalia present at birth.
+    dataType: OntologyOne [GenderAtBirth], OntologyType [assigned gender at birth, http://purl.obolibrary.org/obo/GSSO_009418]
+    partOfStandard: Beacon v2, FAIR Genomes
+    example: assigned female at birth
+
+  - name: Genotypic sex
+    definedBy: PATO:0020000 [http://purl.obolibrary.org/obo/PATO_0020000]
+    definedAs: genotypic sex; A biological sex quality inhering in an individual based upon genotypic composition of sex chromosomes.
+    dataType: OntologyOne [GenotypicSex], OntologyType [Karyotype Status, http://purl.obolibrary.org/obo/NCIT_C168871]
+    partOfStandard: FAIR Genomes
+    example: 47,XXX Karyotype
