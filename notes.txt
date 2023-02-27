@@ -1,0 +1,17 @@
+smallest:
+* column library
+* lege archetypes (incl Thing)
+daarna:
+* standaard is een tussencompositie columns + lege types
+* nieuwe archetypes samenenstellen uit bestaande en standaarden
+
+"declare where it fits best"
+"choosing a column makes your thing that type"
+thing.yaml
+- Identifier
+  subject.yaml
+- Age
+- Gender at birth
+- GenotypicSex
+  Person
+- Address
