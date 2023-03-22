@@ -12,11 +12,15 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 * Columns that represent the same concept (e.g. Age) expressed in a different value type (e.g. age in years vs. age range categorical) are not explicitly connected, but should be tagged with the same semantics.
 * Column names are only required to be unique within context of their table.
 * Table and column names must start with letter, followed by letter, number, whitespace or underscore ([a-zA-Z][a-zA-Z0-9_ ]*).
+* Things not supported:
+  * Inheritance because it is too limiting. How to solve use cases for inheritance?
+    * Instead of querying for an inheritance subtree you can indicate what profile of a table you want to have in your reference
+    * When using refLabel for a reference the designer of an instance should ensure all columns exist in the refered to profiles.
 
 ## Rules for profiles
 * Profiles represent specific projects or applications.
 * Profiles can cherry-pick a combination of:
-  * Tables (all columns of that table)
+  * Tables (all columns of that table). We sometimes refer to such table instance as 'flavor'. E.g. Patient is a flavor of Subject.
   * Columns (some columns of that table)
   * Profiles (all columns included or defined by that profile)
   * Standards (all columns included or defined by that standard)
@@ -57,20 +61,18 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 | Attribute                     | Description                                      |
 |-------------------------------|--------------------------------------------------|
 | name                          | Name of this profile. Required.                  |
-| definition                    | Definition of this profile.                      |
-| tags                          | Ontology terms that best describe this profile.  |
+| description                   | Definition of this profile.                      |
 | [authors](#authors)           | A list of contributing profile authors.          |
 | [copyright](#copyright)       | A copyright statement about the profile.         |
 | [license](#license)           | The license under which the profile is released. |
 | [reuseColumns](#reusecolumns) | Existing columns reused by this profile.         |
-| [newTablesOrColumns](#tables) | Tables or columns introduced by this profile.    |
+| [customColumns](#tables)      | Tables or columns introduced by this profile.    |
 
 ### Standard attributes <a id='standards'></a>
 | Attribute               | Description                                                   |
 |-------------------------|---------------------------------------------------------------|
 | name                    | Name of this profile. Required.                               |
-| definition              | Definition of this profile, usually adapted from an ontology. |
-| tags                    | Ontology terms that best describe this profile.               |
+| description             | Definition of this profile, usually adapted from an ontology. |
 | [authors](#authors)     | A list of contributing profile authors.                       |
 | [copyright](#copyright) | A copyright statement about the profile.                      |
 | [license](#license)     | The license under which the profile is released.              |
@@ -79,8 +81,8 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 ## Reuse columns <a id='reusecolumns'></a>
 | Attribute | Description                                          |
 |-----------|------------------------------------------------------|
-| type      | "Profile", "Table", or "Column"                      |
 | name      | Profile or table name, table.columnName for columns. |
+| type      | "profile", "standard", "table", or "column"          |
 
 ## Author attributes <a id='authors'></a>
 | Attribute | Description                                 |
@@ -100,3 +102,7 @@ For instance, _Subject_ is reusable cross-species by replacing human-biased unde
 |-----------|---------------------------------|
 | name      | Name of the active license.     |
 | url       | URL where license can be found. |
+
+## Design principles for the syntax
+* we prefer explicit definitions over magic. E.g. if you are ducktyping (e.g. using different flavors of a table) then the standard should make exlpicit if you assume particular columns to be present (e.g. via refLabel you can indidate what columns you expect in a lookup).
+* semantic data types.

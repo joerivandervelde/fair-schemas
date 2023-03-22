@@ -1,0 +1,13 @@
+---
+name: Subject
+definedBy: NCIT:C41189
+definedAs: Study Subject; An individual who is observed, analyzed, examined, investigated, experimented upon, or/and treated in the course of a particular study.
+columns:
+
+  - name: Identifier
+    definedBy: NCIT:C83083
+    definedAs: Subject Identifier; A sequence of characters used to identify, name, or characterize a trial or study subject.
+    dataType: identifier
+    partOfStandard: Beacon v2, FAIR Genomes
+    example: Indv001
+
