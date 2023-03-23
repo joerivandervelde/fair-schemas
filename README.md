@@ -1,4 +1,5 @@
 # fair-schemas
+# Still very much in flux! Living design doc @ https://docs.google.com/presentation/d/1O86f7NJAUh_3Xm7q-ijQ_vrF70ltypGI5euuVFo8GrM
 FAIR schemas to enable and encourage data interoperability across systems.
 This repository contains best-practice _tables_ that are reused for specific projects or applications via _profiles_.
 The aim is to be specific enough to be relatable and useful, but not be unnecessarily specific.
