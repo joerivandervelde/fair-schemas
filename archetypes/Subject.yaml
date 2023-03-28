@@ -2,12 +2,30 @@
 name: Subject
 definedBy: NCIT:C41189
 definedAs: Study Subject; An individual who is observed, analyzed, examined, investigated, experimented upon, or/and treated in the course of a particular study.
-columns:
-
-  - name: Identifier
-    definedBy: NCIT:C83083
+notes: Not limited to humans, could be any organism.
+identifier:
+  - definedBy: NCIT:C83083
     definedAs: Subject Identifier; A sequence of characters used to identify, name, or characterize a trial or study subject.
-    dataType: identifier
-    partOfStandard: Beacon v2, FAIR Genomes
-    example: Indv001
+attributes:
 
+  - name: Age in years
+    definedBy: NCIT:C25150
+    definedAs: Age; How long something has existed; elapsed time since birth.
+    value:
+      - provide: one
+        datatype: Integer
+    unit:
+      - definedBy: NCIT:C29848
+        definedAs: Year; A period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period.
+    example: 42
+
+  - name: Year of Birth
+    definedBy: NCIT_C83164
+    definedAs: Birth Year; The year in which a person was born.
+    value:
+      - provide: one
+        datatype: Integer
+    unit:
+      - definedBy: NCIT:C159612
+        definedAs: Year Date; The year in four digit format.
+    example: 1978

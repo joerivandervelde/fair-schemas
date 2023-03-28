@@ -1,20 +1,39 @@
 ---
 name: Person
-extends: Subject
 definedBy: NCIT:C25190
 definedAs: Person; A human being.
-columns:
+identifier:
+  - definedBy: NCIT:C94034
+    definedAs: Qualified Person Identifier; A unique symbol that establishes identity of the qualified person.
+attributes:
+
+  - name: Gender identity
+    definedBy: MESH:D005783
+    definedAs: Gender Identity; A person's concept of self as being male and masculine or female and feminine, or ambivalent, based in part on physical characteristics, parental responses, and psychological and social pressures. It is the internal experience of gender role.
+    value:
+      - provide: one
+        datatype: OntologyTerm
+        from: ontologies/GenderIdentity.yaml
+    example: nonbinary gender identity
 
   - name: Gender at birth
-    definedBy: GSSO:009418 [http://purl.obolibrary.org/obo/GSSO_009418]
+    definedBy: GSSO:009418
     definedAs: assigned gender at birth; Assigned gender is one's gender which was assigned at birth, typically by a medical and/or legal organization, and then later registered with other organizations. Such a designation is typically based off of the superficial appearance of external genitalia present at birth.
-    dataType: OntologyOne [GenderAtBirth], OntologyType [assigned gender at birth, http://purl.obolibrary.org/obo/GSSO_009418]
-    partOfStandard: Beacon v2, FAIR Genomes
+    value:
+      - provide: one
+        datatype: OntologyTerm
+        from: ontologies/GenderAtBirth.yaml
     example: assigned female at birth
 
   - name: Genotypic sex
-    definedBy: PATO:0020000 [http://purl.obolibrary.org/obo/PATO_0020000]
+    definedBy: PATO:0020000
     definedAs: genotypic sex; A biological sex quality inhering in an individual based upon genotypic composition of sex chromosomes.
-    dataType: OntologyOne [GenotypicSex], OntologyType [Karyotype Status, http://purl.obolibrary.org/obo/NCIT_C168871]
-    partOfStandard: FAIR Genomes
+    value:
+      - provide: one
+        datatype: OntologyTerm
+        from: ontologies/GenotypicSex.yaml
+    unit:
+      - definedBy: NCIT:C168871
+        definedAs: Karyotype Status; The status of the subject's karyotype.
     example: 47,XXX Karyotype
+

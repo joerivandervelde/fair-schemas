@@ -1,0 +1,7 @@
+---
+- name: Identifier
+  definedBy: EDAM:0842
+  definedAs: Identifier; A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).
+- name: OntologyTerm
+  definedBy: EDAM:0966
+  definedAs: Ontology term; A term (name) from an ontology.

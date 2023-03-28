@@ -1,0 +1,33 @@
+---
+name: Clinical Observation
+definedBy: NCIT:C116555
+definedAs: Clinical Observation; The act, by a healthcare worker, of monitoring an identified subject and recording signs, symptoms, or behavior.
+identifier:
+  - definedBy: NCIT:C87853
+    definedAs: Clinical Events Reference Identifier; A character or string used to name, or characterize a clinical events reference.
+attributes:
+
+  - name: Phenotype
+    definedBy: NCIT:C16977
+    definedAs: Phenotype; The assemblage of traits or outward appearance of an individual. It is the product of interactions between genes and between genes and the environment.
+    value:
+      - provide: multiple
+        datatype: OntologyTerm
+        from: ontologies/Phenotypes.yaml
+    unit:
+      - definedBy: WikiData:P3841
+        definedAs: Human Phenotype Ontology ID; The Human Phenotype Ontology (HPO) is a widely used vocabulary of phenotypic abnormalities encountered in human disease.
+
+
+  - name: Disease code
+
+  - name: Family history
+
+  - name: Severity
+
+  - name: Stage
+
+  - name: Age of onset ageGroup
+
+  - name: Age of onset iso8601duration
+    example: P20Y5M1D

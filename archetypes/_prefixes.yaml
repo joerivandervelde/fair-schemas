@@ -1,0 +1,17 @@
+---
+- name: NCIT
+  prefix: http://purl.obolibrary.org/obo/NCIT_
+- name: SIO
+  prefix: http://semanticscience.org/resource/SIO_
+- name: EDAM
+  prefix: http://edamontology.org/data_
+- name: GSSO
+  prefix: http://purl.obolibrary.org/obo/GSSO_
+- name: PATO
+  prefix: http://purl.obolibrary.org/obo/PATO_
+- name: WikiData
+  prefix: https://www.wikidata.org/wiki/Property%3A
+- name: MESH
+  prefix: http://purl.bioontology.org/ontology/MESH/
+- name: SNOMED
+  prefix: http://snomed.info/id/

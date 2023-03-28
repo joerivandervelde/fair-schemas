@@ -1,9 +1,38 @@
 ---
 name: Patient
-extends: Person
 definedBy: NCIT:C16960
 definedAs: Patient; A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary.
+identifier:
+  - definedBy: NCIT:C164337
+    definedAs: Patient Identifier; An alphanumeric identifier assigned to a specific patient.
 columns:
 
-  - name: Causal gene
-    etc
+  - name: Primary affiliated institute
+    definedBy: SNOMED:45131006
+    definedAs: Primary care hospital (environment)
+    value:
+      - provide: one
+        datatype: OntologyTerm
+        from: ontologies/Institutes.yaml
+    unit:
+      - definedBy: SIO:000688
+        definedAs: institute; institute is a society or organization having a object or common factor, and is normally applied to those with a scientific, educational, or social objective.
+
+  - name: Medication
+    definedBy: NCIT:C459
+    definedAs: Medication; A drug product that contains one or more active and/or inactive ingredients; it is intended to treat, prevent or alleviate the symptoms of disease. This term does not refer to the individual ingredients that make up the product.
+    value:
+      - provide: multiple
+        datatype: OntologyTerm
+        from: ontologies/Drugs.yaml
+    unit:
+      - definedBy: EDAM:3103
+        definedAs: ATC code; Unique identifier of a drug conforming to the Anatomical Therapeutic Chemical (ATC) Classification System, a drug classification system controlled by the WHO Collaborating Centre for Drug Statistics Methodology (WHOCC).
+
+  - name: Drug regimen
+    definedBy: NCIT:C142516
+    definedAs: Dosage Regimen; The specific way a therapeutic drug is to be taken, including formulation, route of administration, dose, dosing interval, and treatment duration.
+    value:
+      - provide: one
+        datatype: Text
+
