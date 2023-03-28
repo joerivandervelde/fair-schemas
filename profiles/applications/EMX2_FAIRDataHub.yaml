@@ -1,0 +1,7 @@
+---
+name: EMX2 FAIR Data Hub
+description: EMX2 FAIR Data Hub is a combination of Beacon v2, FAIR Genomes, FAIR Data Point and more to enable life science FAIRification
+authors:
+  - name: K. Joeri van der Velde
+tables:
+  - name: GenomicVariations

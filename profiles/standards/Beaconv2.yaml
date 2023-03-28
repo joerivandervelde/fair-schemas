@@ -24,3 +24,6 @@ license:
   name: Creative Commons Zero v1.0 Universal
   url: https://creativecommons.org/publicdomain/zero/1.0/
 url: https://beacon-project.io
+tables:
+  - name: GenomicVariations
+    columns:

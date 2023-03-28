@@ -1,0 +1,72 @@
+---
+name: Genomic variant
+definedBy: NCIT:C17248
+definedAs: Genetic Variation; Genetic Variation consists of deviation(s) in the nucleotide sequence of the genetic material of an individual from that typical of the group to which the individual belongs, or deviation(s) in the nucleotide sequence of the genetic material of offspring from that of its parents.
+identifier:
+  - definedBy: NCIT:C164813
+    definedAs: Genetic Variation Identifier; A unique identifier maintained by an authoritative database that represents a genetic variation.
+attributes:
+
+  - name: Variant type
+    definedBy: NCIT:C173544
+    definedAs: Molecular Sequence Variation Type; The category or type of variation or abnormality present in an amino acid or nucleic acid sequence.
+    value:
+      - provide: one
+        datatype: String
+    example: SNP
+
+  - name: Reference base
+    definedBy:
+    definedAs:
+    value:
+      - provide:
+        datatype:
+    unit:
+      - definedBy:
+        definedAs:
+    example:
+
+  - name: Alternative base
+    definedBy:
+    definedAs:
+    value:
+      - provide:
+        datatype:
+    unit:
+      - definedBy:
+        definedAs:
+    example:
+
+  - name:
+    definedBy:
+    definedAs:
+    value:
+      - provide:
+        datatype:
+    unit:
+      - definedBy:
+        definedAs:
+    example:
+
+  - name:
+    definedBy:
+    definedAs:
+    value:
+      - provide:
+        datatype:
+    unit:
+      - definedBy:
+        definedAs:
+    example:
+
+  - name:
+    definedBy:
+    definedAs:
+    value:
+      - provide:
+        datatype:
+    unit:
+      - definedBy:
+        definedAs:
+    example:
+
