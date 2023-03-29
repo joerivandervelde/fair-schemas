@@ -11,7 +11,7 @@ attributes:
     definedBy: NCIT:C16977
     definedAs: Phenotype; The assemblage of traits or outward appearance of an individual. It is the product of interactions between genes and between genes and the environment.
     value:
-      - provide: multiple
+      - provide: one_or_more
         datatype: OntologyTerm
         from: ontologies/Phenotypes.yaml
     unit:

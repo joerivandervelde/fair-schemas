@@ -1,22 +1,23 @@
 ---
 name: COSAS
-description: blaat
-tables:
-  - NonPatients:
-      archetype: Subject
-  - Patients:
-      #we allow another name then Subject because we treat this as a 'dataset of Subject'. There can be more than one
-      # assume that the software will allow me to query ALL instances of Subject. So for us 'Patients' is just a subset filter.
-      archetype: Subject, ClinicalObservation #is also a Subject then? Overlapping fields well be merged. Conflicting fields not allowed.
-      standardsSupported:
-        - beaconv2 #so we can validate that the columnss required are indeed present
-      columns:
-        - name: Identifier
-          #we now propose that fields that are on both archetypes should be same; alternatively we could make explicit what archetype will be used, e.g. Subject.Identifier
-          type:
-          description: if you provide a type then you are not using the archetype. You are forbidden to use column names already defined in archetype.
-        - name: Genotypic sex
-          required: true
-          label: sex
-        - name: parent #so this is a self reference to Subject. What will it refer to in context of COSAS???
-          refScope: Patients,NonPatients #so both these must be of archetype Subject, otherwise we error?
+#description: todo
+#tables:
+#  - NonPatients:
+#      archetype: Subject
+#  - Patients:
+#      #we allow another name then Subject because we treat this as a 'dataset of Subject'. There can be more than one
+#      # assume that the software will allow me to query ALL instances of Subject. So for us 'Patients' is just a subset filter.
+#      archetype: Subject, ClinicalObservation #is also a Subject then? Overlapping fields well be merged. Conflicting fields not allowed.
+#      standardsSupported:
+#        - beaconv2 #so we can validate that the columnss required are indeed present
+#      columns:
+#        - name: Identifier
+#          #we now propose that fields that are on both archetypes should be same; alternatively we could make explicit what archetype will be used, e.g. Subject.Identifier
+#          type:
+#          description: if you provide a type then you are not using the archetype. You are forbidden to use column names already defined in archetype.
+#        - name: Genotypic sex
+#          required: true
+#          label: sex
+#        - name: parent #so this is a self reference to Subject. What will it refer to in context of COSAS???
+#          refScope: Patients,NonPatients #so both these must be of archetype Subject, otherwise we error?
+#

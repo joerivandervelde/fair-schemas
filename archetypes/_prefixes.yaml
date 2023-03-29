@@ -15,3 +15,7 @@
   prefix: http://purl.bioontology.org/ontology/MESH/
 - name: SNOMED
   prefix: http://snomed.info/id/
+- name: GENO
+  prefix: http://purl.obolibrary.org/obo/GENO_
+- name: ENSGLOSSARY
+  prefix: http://ensembl.org/glossary/ENSGLOSSARY_

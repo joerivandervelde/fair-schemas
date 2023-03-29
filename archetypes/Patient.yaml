@@ -22,7 +22,7 @@ columns:
     definedBy: NCIT:C459
     definedAs: Medication; A drug product that contains one or more active and/or inactive ingredients; it is intended to treat, prevent or alleviate the symptoms of disease. This term does not refer to the individual ingredients that make up the product.
     value:
-      - provide: multiple
+      - provide: one_or_more
         datatype: OntologyTerm
         from: ontologies/Drugs.yaml
     unit:

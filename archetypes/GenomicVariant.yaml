@@ -16,57 +16,72 @@ attributes:
     example: SNP
 
   - name: Reference base
-    definedBy:
-    definedAs:
+    definedBy: GENO:0000036
+    definedAs: reference allele; An allele whose sequence matches what is consdiered to be the reference sequence at that location in the genome.
     value:
-      - provide:
-        datatype:
-    unit:
-      - definedBy:
-        definedAs:
-    example:
+      - provide: one
+        datatype: String
+    example: C
 
   - name: Alternative base
-    definedBy:
-    definedAs:
+    definedBy: GENO:0000002
+    definedAs: variant allele; An allele that varies in it sequence from what is considered the reference or canonical sequence at that location.
     value:
-      - provide:
-        datatype:
+      - provide: one
+        datatype: String
     unit:
       - definedBy:
         definedAs:
-    example:
+    example: G
 
-  - name:
-    definedBy:
-    definedAs:
+  - name: Start position
+    definedBy: GENO:0000894
+    definedAs: start_position; The starting position of a sequence feature or interval.
     value:
-      - provide:
-        datatype:
+      - provide: one
+        datatype: Long
     unit:
       - definedBy:
         definedAs:
-    example:
+    example: 2447955
 
-  - name:
-    definedBy:
-    definedAs:
+  - name: End position
+    definedBy: GENO:0000895
+    definedAs: end_position; The ending position of a sequence feature or interval.
     value:
-      - provide:
-        datatype:
+      - provide: one
+        datatype: Long
     unit:
       - definedBy:
         definedAs:
-    example:
+    example: 2447958
 
-  - name:
-    definedBy:
-    definedAs:
+  - name: HGVS Genomic Variation Annotation
+    definedBy: NCIT:C172243
+    definedAs: HGVS Genomic Variation Annotation; The designation of an observed genomic variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
     value:
-      - provide:
-        datatype:
+      - provide: one
+        datatype: String
+    example: NC_000017.11:g.43057063G>A
+
+
+  - name: HGVS Protein Variation Annotation
+    definedBy: ENSGLOSSARY:0000274
+    definedAs: HGVS nomenclature; A set of recomendations for variant naming. The nomenclature describes the change a variant allele has on a named (genomic, transcript or protein) sequence. Can be used as an input for the VEP and displayed for known variants.
+    value:
+      - provide: one_or_more
+        datatype: String
+    example: NP_009225.1:p.Glu1817Ter
+
+
+  - name: HGVS Transcript Variation Annotation
+    definedBy: NCIT:C172244
+    definedAs: HGVS Transcript Variation Annotation; The designation of an observed transcript variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
+    value:
+      - provide: one_or_more
+        datatype: String
     unit:
       - definedBy:
         definedAs:
-    example:
+    example: NC_000023.10(NM004006.2):c.357+1G
 

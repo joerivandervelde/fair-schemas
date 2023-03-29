@@ -1,0 +1,41 @@
+---
+name: Human genomic variant
+definedBy:
+definedAs:
+identifier:
+  - definedBy:
+    definedAs:
+attributes:
+
+  - name: Reference sequence identifier
+    definedBy: NCIT:C164388
+    definedAs: Genetic Reference Sequence; A published genetic sequence that is used as a reference sequence against which other sequences are compared.
+    value:
+      - provide:
+        datatype:
+    unit:
+      - definedBy:
+        definedAs:
+    example: GRCh37
+
+  - name: Chromosome
+    definedBy: NCIT:C13203
+    definedAs: Human Chromosome; A structure found in the nucleus of human cells that is comprised of a strand of linearized double-stranded DNA plus proteins that package the DNA in a condensed coil form and regulate chromosomal function.
+    value:
+      - provide: one
+        datatype: OntologyTerm
+        from: ontologies/HumanChromosomes.yaml
+    example: 20
+
+  - name: Gene
+    definedBy: NCIT:C16612
+    definedAs: Gene; A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function.
+    value:
+      - provide: one_or_more
+        datatype: OntologyTerm
+        from: ontologies/Genes.yaml
+    unit:
+      - definedBy:
+        definedAs:
+    example: TTN
+
